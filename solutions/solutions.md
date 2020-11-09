@@ -49,7 +49,7 @@ WHERE cat_id=209;
 <br>
 
 6. Through Rip's statement you'll want to look for a cat called ```Short Valley Medium```. Same procedure goes here. First you'll have to search their name in the ```cats```table followed by using their "id"/"cat_id" to able to read their statement in ```ìnterviews```
-*Following queries will get you on the right path*
+*Following queries will get you on the right path:*
 ```sql
 SELECT * 
 FROM cats
@@ -66,7 +66,7 @@ WHERE cat_id=380;
 7. This is the hardest "code to crack". Through Short Valley Medium's statement (which was made *before* Yam-Yam's even disappeared:scream_cat: w00t?!) you're able to figure out the remaining clues.
 She is trying to say that you should select three columns: ```apartment_check_in_time``` + ```number_of_bedrooms``` and ```encrypted```.
 Create an ```ÌNNER JOIN``` and in order to be able to specify the correct row you also need to ad the ```SSN``` value that she mentions.
-*This query can be used*
+*This query can be used:*
 ```sql
 SELECT hacker_kitty_data.apartment_check_in_time, apartments.number_of_bedrooms, hacker_kitty_data.encrypted
 FROM apartments
